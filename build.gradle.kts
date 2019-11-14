@@ -1,10 +1,5 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-ext {
-	val kotlinVersion = "1.3.50"
-	val springBootVersion = "2.2.1.RELEASE"
-}
-
 buildscript {
 	repositories {
 		mavenCentral()
@@ -20,8 +15,6 @@ buildscript {
 plugins {
 	id("org.springframework.boot") version "2.2.1.RELEASE"
 	id("io.spring.dependency-management") version "1.0.8.RELEASE"
-//	kotlin("spring")
-//	kotlin("jpa")
 	kotlin("jvm") version "1.3.50"
 	kotlin("plugin.spring") version "1.3.50"
 	kotlin("plugin.jpa") version "1.3.50"
